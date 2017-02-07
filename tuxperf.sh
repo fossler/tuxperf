@@ -4,11 +4,11 @@
 # http://techblog.netflix.com/2015/04/introducing-vector-netflixs-on-host.html
 
 
-printf "x========[ System Uptime ]========================================================================================\n"
+echo -e "\e[31;43m***** SYSTEM UPTIME AND LOAD *****\e[0m"
 uptime -p
 
-printf "x========[ dmesg ]========================================================================================\n"
+echo -e "\e[31;43m***** dmesg - last 10 lines *****\e[0m"
 dmesg | tail
 
-printf "x========[ TOP 10 Processes by Memory ]========================================================================================\n"
+echo -e "\e[31;43m***** TOP 10 Processes by Memory *****\e[0m"
 ps -eo pid,ppid,cmd,%mem,%cpu --sort=-%mem | head
