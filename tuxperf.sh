@@ -6,9 +6,10 @@
 
 echo -e "\e[31;43m***** SYSTEM UPTIME AND LOAD *****\e[0m"
 uptime -p
+echo ""
 
 echo -e "\e[31;43m***** dmesg - last 10 lines *****\e[0m"
 dmesg | tail
 
-echo -e "\e[31;43m***** TOP 10 Processes by Memory *****\e[0m"
+echo -e "\e[31;43m ...:::[ TOP 10 Processes by Memory ]:::...\e[0m"
 ps -eo pid,ppid,cmd,%mem,%cpu --sort=-%mem | head
