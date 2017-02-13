@@ -15,3 +15,7 @@ echo ""
 echo -e "\e[30;43m\e[1m *************[ TOP 10 Processes by Memory ]************* \e[0m"
 ps -eo pid,ppid,cmd,%mem,%cpu --sort=-%mem | head
 echo ""
+
+echo -e "\e[30;43m\e[1m *************[ mpstat ]************* \e[0m"
+mpstat -P ALL
+echo ""
