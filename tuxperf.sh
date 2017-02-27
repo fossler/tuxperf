@@ -2,6 +2,8 @@
 
 # http://techblog.netflix.com/2015/11/linux-performance-analysis-in-60s.html
 # http://techblog.netflix.com/2015/04/introducing-vector-netflixs-on-host.html
+# http://www.tecmint.com/sysstat-commands-to-monitor-linux/?utm_content=bufferbb904&utm_medium=social&utm_source=plus.google.com&utm_campaign=buffer
+
 clear
 
 echo -e "\e[30;43m\e[1m *************[ SYSTEM UPTIME AND LOAD ]************* \e[0m"
