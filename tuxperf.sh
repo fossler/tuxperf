@@ -25,3 +25,7 @@ echo ""
 echo -e "\e[30;43m\e[1m *************[ vmstat ]************* \e[0m"
 vmstat 5 10
 echo ""
+
+echo -e "\e[30;43m\e[1m *************[ pidstat ]************* \e[0m"
+pidstat 1
+echo ""
