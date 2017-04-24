@@ -23,7 +23,7 @@ ps -eo pid,ppid,cmd,%mem,%cpu --sort=-%cpu | head
 echo ""
 
 echo -e "\e[30;43m\e[1m *************[ I/O Stats ]************* \e[0m"
-iostat -mhxN 1 5
+iostat -mhxN 1 1
 echo ""
 
 echo -e "\e[30;43m\e[1m *************[ mpstat ]************* \e[0m"
