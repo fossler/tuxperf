@@ -27,9 +27,9 @@ mpstat -P ALL
 echo ""
 
 echo -e "\e[30;43m\e[1m *************[ vmstat ]************* \e[0m"
-vmstat 5 10
+vmstat --unit M -w 1 1
 echo ""
 
 echo -e "\e[30;43m\e[1m *************[ pidstat ]************* \e[0m"
-pidstat 1
+pidstat 1 1
 echo ""
