@@ -14,6 +14,10 @@ echo -e "\e[30;43m\e[1m *************[ dmesg - last 10 lines ]************* \e[0
 dmesg | tail
 echo ""
 
+echo -e "\e[30;43m\e[1m *************[ RAM Usage ]************* \e[0m"
+free -m
+echo ""
+
 echo -e "\e[30;43m\e[1m *************[ TOP 10 Processes by Memory ]************* \e[0m"
 ps -eo pid,ppid,cmd,%mem,%cpu --sort=-%mem | head
 echo ""
